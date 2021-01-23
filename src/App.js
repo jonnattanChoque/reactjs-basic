@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import BitCoinContainer from './base/Logic';
 // import Hola from './component/Hola';
 // import Number from './component/Number';
 // import Contador from './component/Contador';
@@ -9,8 +10,8 @@ import './App.css';
 // import Events from './component/Events';
 // import Form from './component/Form';
 // import Children from './component/Children';
-import FetchApi from './component/FetchApi';
-import Update from './ciclo/update';
+// import FetchApi from './component/FetchApi';
+// import Update from './ciclo/update';
 
 function App() {
   return (
@@ -24,9 +25,10 @@ function App() {
         <Lista />
         <Events />
         <Form />
-        <Children /> */}
+        <Children />
         <FetchApi />
         <Update />
+        <BitCoinContainer /> */}
       </header>
     </div>
   );
