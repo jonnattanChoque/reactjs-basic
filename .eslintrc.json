@@ -29,6 +29,13 @@
         "react/prefer-stateless-function": [0],
         "react/no-array-index-key": [0],
         "eslint-disable-next-line no-alert": [0],
-        "react/prop-types": "off"
+        "semi": "warn",
+        "camelcase": "off",
+        "max-classes-per-file": "off",
+        "react/state-in-constructor": "off",
+        "no-unused-vars": "warn",
+        "array-callback-return": "warn",
+        "react/no-unused-state": "warn",
+        "react/require-default-props": "warn"
     }
 }

@@ -6,9 +6,11 @@ import './App.css';
 // import Contador from './component/Contador';
 // import Conditional from './component/Conditional';
 // import Lista from './component/Lista';
-import Events from './component/Events';
-import Form from './component/Form';
-import Children from './component/Children';
+// import Events from './component/Events';
+// import Form from './component/Form';
+// import Children from './component/Children';
+import FetchApi from './component/FetchApi';
+import Update from './ciclo/update';
 
 function App() {
   return (
@@ -19,10 +21,12 @@ function App() {
         <Hola title="desde react js" array={[2, 3, 4]} />
         <Number text="Mi número es" num={1234} />
         <Conditional />
-        <Lista /> */}
+        <Lista />
         <Events />
         <Form />
-        <Children />
+        <Children /> */}
+        <FetchApi />
+        <Update />
       </header>
     </div>
   );
