@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'bulma/css/bulma.css';
 import { Detail } from './front/Detail';
 import { Home } from './pages/Home';
+import { NotFound } from './pages/NotFound';
 
 // import BitCoinContainer from './base/Logic';
 // import Hola from './component/Hola';
@@ -18,12 +20,6 @@ import { Home } from './pages/Home';
 
 class App extends Component {
   render() {
-    const url = new URL(document.location);
-    const id = url.searchParams.get('id');
-    const page = url.searchParams.has('id')
-      ? <Detail id={id} />
-      : <Home />;
-
     return (
       <div className="App">
         {/* <Contador />
@@ -37,7 +33,11 @@ class App extends Component {
         <FetchApi />
         <Update />
         <BitCoinContainer /> */}
-        {page}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/detail/:id" component={Detail} />
+          <Route component={NotFound} />
+        </Switch>
       </div>
     );
   }
