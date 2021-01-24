@@ -22,7 +22,7 @@
         "react/react-in-jsx-scope": "off",
         "react/destructuring-assignment": "off",
         "no-nested-ternary": "warn",
-        "react/prop-types": "warn",
+        "react/prop-types": "off",
         "react/jsx-filename-extension": [0],
         "react/no-access-state-in-setstate": [0],
         "react/jsx-one-expression-per-line" : [0],
@@ -36,6 +36,16 @@
         "no-unused-vars": "warn",
         "array-callback-return": "warn",
         "react/no-unused-state": "warn",
-        "react/require-default-props": "warn"
+        "react/require-default-props": "warn",
+        "import/prefer-default-export": "off",
+        "react/jsx-max-props-per-line": "off",
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "jsx-a11y/img-redundant-alt": "off",
+        "react/jsx-first-prop-new-line": "off",
+        "react/jsx-closing-bracket-location": "off",
+        "react/static-property-placement": "off",
+        "react/no-unused-prop-types": "off",
+        "react/forbid-prop-types": "off"
     }
 }

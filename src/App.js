@@ -1,6 +1,9 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import 'bulma/css/bulma.css';
+import { Detail } from './front/Detail';
+import { Home } from './pages/Home';
+
 // import BitCoinContainer from './base/Logic';
 // import Hola from './component/Hola';
 // import Number from './component/Number';
@@ -13,11 +16,16 @@ import './App.css';
 // import FetchApi from './component/FetchApi';
 // import Update from './ciclo/update';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+class App extends Component {
+  render() {
+    const url = new URL(document.location);
+    const id = url.searchParams.get('id');
+    const page = url.searchParams.has('id')
+      ? <Detail id={id} />
+      : <Home />;
+
+    return (
+      <div className="App">
         {/* <Contador />
         <Hola title="desde react js" array={[2, 3, 4]} />
         <Number text="Mi número es" num={1234} />
@@ -29,9 +37,10 @@ function App() {
         <FetchApi />
         <Update />
         <BitCoinContainer /> */}
-      </header>
-    </div>
-  );
+        {page}
+      </div>
+    );
+  }
 }
 
 export default App;
